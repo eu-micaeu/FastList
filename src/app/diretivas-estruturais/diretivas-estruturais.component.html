@@ -1,0 +1,18 @@
+<p *ngIf="condition; else elseBlock">Micael</p>
+<ng-template #elseBlock>
+    <p>
+        Rocha
+    </p>
+</ng-template>
+
+<hr>
+
+<p *ngIf="conditionClick">
+    True
+</p>
+
+<p *ngIf="!conditionClick">
+    False
+</p>
+
+<button (click)="onClick()">Clicar</button>
